@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //Get call to return json that formats natural and unix date
-app.get(`/dateValues/:dateVal`, (req,res,next) => {
+app.get(`/:dateVal`, (req,res,next) => {
   //gets date from request
   var dateVal = req.params.dateVal;
 

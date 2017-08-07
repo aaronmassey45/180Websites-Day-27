@@ -1,12 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Time Stamp Converter | 180 Websites</title>
+  <title>Timestamp Microservice | 180 Websites</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
+
 <body>
-  hi
+  <div class="container">
+    <h1 class="header">Timestamp Microservice!</h1>
+    <blockquote>
+      I can pass a date or unix code as a parameter in the url and it will check to see whether that string contains either a unix timestamp or a natural language date (ex. August 8, 1994)
+    </blockquote>
+    <h3>Example usage:</h3>
+    <code>https://amp-timestamp.glitch.me/December%2015,%202015</code><br>
+    <code>https://amp-timestamp.glitch.me/1450137600</code>
+    <h3>Example output:</h3>
+    <code>
+      {
+        "unix": 1450137600,
+        "natural": "December 15, 2015"
+      }
+    </code>
+  </div>
 </body>
+
 </html>
